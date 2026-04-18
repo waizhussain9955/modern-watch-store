@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Leckerli+One&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --cyan-color: oklch(78.9% 0.154 211.53);
+}
+.Leckerli {
+  font-family: "Leckerli One", cursive;
+}
+.cyan {
+  color: var(--cyan-color);
+}
+.cyan-bg {
+  background: #00b0ad;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.light-blue {
+  color: #00b0ad;
+}
+.nav-bg {
+  background-color: #f6f6f6;
+}
+.text-color {
+  color: #f6f6f6;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  border: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  height: 3px;
+  width: 100%;
+  background: #00b0ad;
+}
+li {
+  text-decoration: none;
+}

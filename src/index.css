@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-wayne-teal: #00A3C1;
+    --color-wayne-gold: #C5A059;
+    --color-wayne-black: #0A0A0A;
+    --color-wayne-bg: #050505;
+    --color-wayne-card: #0F0F0F;
+    --color-wayne-border: #1A1A1A;
+    --color-wayne-text-muted: #888888;
+    --color-wayne-text-light: #FDFEFE;
+
+    --font-serif: "Playfair Display", serif;
+    --font-sans: "Inter", sans-serif;
+
+    --spacing-container: 1440px;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply bg-wayne-bg text-wayne-text-light font-sans antialiased;
+        overflow-x: hidden;
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif tracking-tight;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply px-6 py-2.5 bg-wayne-teal text-white font-semibold flex items-center justify-center transition-all duration-300 hover:bg-wayne-teal/90 active:scale-95 uppercase text-sm tracking-widest;
+    }
+
+    .btn-outline {
+        @apply px-6 py-2.5 border border-wayne-teal text-wayne-teal font-semibold flex items-center justify-center transition-all duration-300 hover:bg-wayne-teal hover:text-white active:scale-95 uppercase text-sm tracking-widest;
+    }
+
+    .premium-card {
+        @apply bg-wayne-card border border-wayne-border p-6 transition-all duration-500 hover:shadow-xl hover:shadow-wayne-teal/10;
+    }
+}
